@@ -87,8 +87,8 @@
 
 @media screen and (max-width: 600px) {
     .contentBoxTodo {
-      width: 160px;
-      height: 200px;
+      width: 120px;
+      height: 160px;
     }
   
     .contentBoxTodo .editTool {
@@ -105,7 +105,7 @@
     }
 
     .contentBoxTodo .bottom{
-        height: 40px;
+        height: 25px;
     }
   
     .contentBoxTodo .bottom button {
