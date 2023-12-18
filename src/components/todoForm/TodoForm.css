@@ -1,0 +1,48 @@
+.contentBoxForm{
+    width: 200px;
+    height: 250px;
+    background-color: #000;
+    position: fixed;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.contentBoxForm form{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contentBoxForm form textarea{
+    width: 80%;
+    background-color: black;
+    resize: none;
+    border: 0;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contentBoxForm form textarea::-webkit-scrollbar{
+    display: none;
+}
+.contentBoxForm form button{
+    width: 100%;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}

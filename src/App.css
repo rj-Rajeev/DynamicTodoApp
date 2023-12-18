@@ -1,0 +1,41 @@
+.fieldApp{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(16, 20, 68, 0.853);
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.fieldApp h1{
+  font-size: 6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+.fieldApp .addIcon{
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  color: white;
+  cursor: pointer;
+}
+.todos-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 250px;
+  height: 200px;
+  background-color: red;
+}
