@@ -87,8 +87,8 @@
 
 @media screen and (max-width: 600px) {
     .contentBoxTodo {
-      width: 120px;
-      height: 160px;
+      width: 130px;
+      height: 170px;
     }
   
     .contentBoxTodo .editTool {
@@ -101,11 +101,15 @@
 
     .contentBoxTodo .todoMsg textarea {
       overflow-y: auto;
-      font-size: 10px;
+      font-size: 12px;
+    }
+
+    .contentBoxTodo .todoMsg h5 {
+      font-size: 12px;
     }
 
     .contentBoxTodo .bottom{
-        height: 25px;
+        height: 28px;
     }
   
     .contentBoxTodo .bottom button {
