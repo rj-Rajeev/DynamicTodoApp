@@ -1,81 +1,116 @@
-.contentBoxTodo{
-    width: 200px;
-    height: 250px;
-    background-color: #000;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
+.contentBoxTodo {
+  width: 300px;
+  height: 350px;
+  background-color: #000;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
-
-.contentBoxTodo .editTool{
-    gap: 20px;
-    padding: 20px;
-    position: absolute;
-    right: 10%;
-    display: flex;
-    gap: 20px;
+.contentBoxTodo .editTool {
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  right: 10%;
+  display: flex;
+  gap: 20px;
 }
-.contentBoxTodo .editTool button{
-    background-color: black;
-    border: 0;
-    color: white;
-    cursor: pointer;
-}
-
-.contentBoxTodo .todoMsg{
-    margin-top: 20px;
-    padding: 20px;
+.contentBoxTodo .editTool button {
+  background-color: black;
+  border: 0;
+  color: white;
+  cursor: pointer;
 }
 
-.contentBoxTodo .todoMsg h5{
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
-    text-align: start;
-    width: 100%;
-    height: 130px;
-    overflow: auto;
-}
-.contentBoxTodo .todoMsg textarea{
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
-    text-align: start;
-    width: 100%;
-    height: 130px;
-    overflow: auto;
-    resize: none;
-    background: none;
-    border: none;
-}
-.contentBoxTodo .todoMsg h5::-webkit-scrollbar{
-    display: none;
+.contentBoxTodo .todoMsg {
+  width: 100%;
+  height: 80%;
+  margin-top: 25px;
+  padding: 20px;
 }
 
-.contentBoxTodo .bottom{
-    width: 200px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
+.contentBoxTodo .todoMsg h5 {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  text-align: start;
+  overflow: auto;
+}
+.contentBoxTodo .todoMsg h5::-webkit-scrollbar {
+  display: none;
+}
 
+.contentBoxTodo .todoMsg textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  text-align: start;
+  overflow: auto;
+  resize: none;
+  background: none;
+  border: none;
+}
+.contentBoxTodo .todoMsg textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.contentBoxTodo .bottom {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
 }
 
 .contentBoxTodo .bottom button {
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.contentBoxTodo .bottom button h4{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.contentBoxTodo .bottom button h4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
+/* -------------------- ResponsivNess ----------------------- */
+
+@media screen and (max-width: 600px) {
+    .contentBoxTodo {
+      width: 180px;
+      height: 220px;
+    }
+  
+    .contentBoxTodo .editTool {
+      right: 5%;
+    }
+    
+    .contentBoxTodo .todoMsg{
+        height: 70%;
+    }
+
+    .contentBoxTodo .todoMsg textarea {
+      overflow-y: auto;
+      font-size: 10px;
+    }
+
+    .contentBoxTodo .bottom{
+        height: 40px;
+    }
+  
+    .contentBoxTodo .bottom button {
+      font-size: 16px;
+    }
+  }
+  
+  

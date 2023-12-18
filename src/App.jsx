@@ -32,7 +32,7 @@ const App = () => {
 
 
   const handleAddClick = () => {
-    setShowTodoForm(true);
+    setShowTodoForm(!showTodoForm);
   };
 
   useEffect(()=>{

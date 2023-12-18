@@ -7,9 +7,11 @@
   align-items: start;
   justify-content: start;
   padding: 20px;
-  overflow: hidden;
+  overflow: auto;
 }
-
+.fieldApp::-webkit-scrollbar{
+  display: none;
+}
 .fieldApp h1{
   font-size: 6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -27,6 +29,8 @@
   height: 100px;
   color: white;
   cursor: pointer;
+  z-index: 99999;
+  position: fixed;
 }
 .todos-container {
   display: flex;
@@ -38,4 +42,16 @@
   width: 250px;
   height: 200px;
   background-color: red;
+}
+
+/* --------------ResponsivDesign--------------- */
+
+@media screen and (max-width: 600px){
+  .fieldApp h1{
+    font-size: 4rem;
+  }
+  .fieldApp .addIcon{
+    width: 60px;
+    height: 60px;
+  }
 }
