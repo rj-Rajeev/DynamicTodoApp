@@ -3,7 +3,7 @@ import './App.css';
 import TodoForm from './components/todoForm/TodoForm';
 import { MdAddCircle } from 'react-icons/md';
 import { TodoProvider, useTodo } from './contexts/TodoContext';
-import Todo from './components/todo/todo';
+import Todo from './components/todo/Todo';
 
 const App = () => {
   const [showTodoForm, setShowTodoForm] = useState(false);
