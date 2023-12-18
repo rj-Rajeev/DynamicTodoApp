@@ -1,6 +1,6 @@
 .contentBoxTodo {
   width: 250px;
-  height: 200px;
+  height: 280px;
   background-color: #000;
   border-radius: 20px;
   overflow: hidden;
@@ -60,7 +60,7 @@
 
 .contentBoxTodo .bottom {
   width: 100%;
-  height: 50px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,8 +87,8 @@
 
 @media screen and (max-width: 600px) {
     .contentBoxTodo {
-      width: 180px;
-      height: 220px;
+      width: 160px;
+      height: 200px;
     }
   
     .contentBoxTodo .editTool {

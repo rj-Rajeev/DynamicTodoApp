@@ -5,7 +5,8 @@
   position: relative;
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 20px;
   overflow: auto;
 }
